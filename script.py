@@ -97,7 +97,7 @@ async def wordcloud(ctx):
 
     wordcloud = await create_wordcloud(server_messages)
     await ctx.send(f"Top 20 words in the last {total_messages_scraped} messages:\n{wordcloud}")
-    download_messages(server_messages)
+    # download_messages(server_messages)
 
 @client.command()
 async def ping(ctx):
